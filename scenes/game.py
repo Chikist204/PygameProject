@@ -91,6 +91,7 @@ class GameScene(BaseScene):
                 self.game.set_scene(self.game.SCENE_GAMEWIN)
             else:
                 self.game.set_scene(self.game.SCENE_GAMEOVER)
+            self.collision_count = 0
             self.start_time = 0
 
     def process_logic(self):
